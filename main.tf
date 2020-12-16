@@ -1,5 +1,5 @@
 module "label_backup_role" {
-  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.19.2"
+  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.22.0"
   enabled    = module.this.enabled
   context    = module.this.context
   attributes = compact(concat(module.this.attributes, list("backup")))
